@@ -8,7 +8,13 @@
     <artifactId>wip</artifactId>
     <version>1.0-SNAPSHOT</version>
 <modules>
+    <module>gitserver</module>
     <module>zuul</module>
+    <module>eureka</module>
+    <module>app</module>
+    <module>support</module>
+    <module>admin</module>
+    <module>content</module>
 
 </modules>
 
