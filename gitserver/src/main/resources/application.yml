@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: gitserver
+  profiles:
+    active: dev

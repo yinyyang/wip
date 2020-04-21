@@ -1,0 +1,22 @@
+server:
+  port: 8001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+spring:
+  cloud:
+    config:
+      uri:  http://localhost:7999
+      label: master
+      name: zuul
+      profile: dev
+
+data-filter:
+  auth-path: #trigger JwtAuthPreFilter
+    -  /app/news/**
+    - /admin/**
+  user-login-path: #trigger LoginAddJwtPostFilter
+    - /app/user/login
